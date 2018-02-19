@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <title>MMC Telefonía Móvil...</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/estilos.css">
+      <script src="https://use.fontawesome.com/33bd5d8291.js"></script>
+      <script src="js/script.js" language="javascript" type="text/javascript"></script>
+   </head>
+   <body>
+    <audio autoplay id="myaudio">
+      <source src="Audio/wars.mp3" autoplay="true" loop="true">
+    </audio>
+      <!--barra de naveacion fija-->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+			 <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+               <i class="logo"></i><img src="imagenes/MMC-LOGO-VECTO.png" width="120" height="50" style="padding-top: 6px">
+            </div>
+			 <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+               <li class="active"><a href="#">Inicio</a></li>
+               <li><a href="#productos">Equipos</a></li>
+               <li><a href="#video">Videos</a></li>
+               <li><a href="#mision">Quienes Somos</a></li>
+               <li><a href="#ubicacion">Contacto</a></li>
+               <li><a href="#preguntas">Preguntas</a></li>
+               <li><a href="#" data-toggle="modal" data-target="#myModal">Registrarme</a>
+            </ul>
+         </div>
+      </nav>
+      <!-- fin barra de naveacion fija-->
+      
+
+      <!--codigo carrusel-->
+      <header>
+         <div class="container">
+            <div class="row espacio" style = "height:L 450px">
+               <div class="modulo1">
+                  <div class="content-carrousel">
+                     <figure><img src="imagenes/carrusel/img1.png"></figure>
+                     <figure><img src="imagenes/carrusel/img2.png"></figure>
+                     <figure><img src="imagenes/carrusel/img3.png"></figure>
+                     <figure><img src="imagenes/carrusel/img4.png"></figure>
+                     <figure><img src="imagenes/carrusel/img5.png"></figure>
+                     <figure><img src="imagenes/carrusel/img6.png"></figure>
+                     <figure><img src="imagenes/carrusel/img7.png"></figure>
+                     <figure><img src="imagenes/carrusel/img8.png"></figure>
+                     <figure><img src="imagenes/carrusel/img9.png"></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <h1>Conectándo tu Mundo...</h1>
+      </header>
+      <!--fin codigo carrusel-->
+
+<!--Banners-->
+     <div class="banner">
+    <div class="row">
+        <div class="col-xs-10 col-sm-6 col-md-4 banner">
+            <div class="banner">
+                <img src="imagenes/Banner/promo1.jpg" alt="" data-toggle="modal" data-target="#promo1">
+            </div>
+        </div>
+        <div class="col-xs-10 col-sm-6 col-md-4 banner">
+            <div class="banner">
+                <img src="imagenes/banner/promo2.jpg" alt="" data-toggle="modal" data-target="#promo2">
+            </div>
+        </div>
+        <div class="col-xs-10 col-sm-6 col-md-4 banner">
+            <div class="banner">
+                <img src="imagenes/Banner/promo3.jpg" alt="" data-toggle="modal" data-target="#promo3">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="promo1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" >
+            <div class="modal-header" id="mpromo1">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                <img src="imagenes/Banner/promo1.jpg" alt="">
+                </button>
+                <h4> Aprovecha nuestras ofertas, para mas información contactanos </h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="promo2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" id="mpromo2">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                <img src="imagenes/Banner/promo2.jpg" alt="">
+                </button>
+                <h4> Aprovecha nuestras ofertas, para mas información contactanos </h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="promo3" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" id="mpromo3">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                <img src="imagenes/Banner/promo3.jpg" alt="">
+                </button>
+                <h4> Aprovecha nuestras ofertas para el día del padre </h4>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+      <!-- fin de banners-->
+
+      <!--Listado de Productos-->
+      <div class="productos">
+         <div class="row">
+            <h1 id="tdisponibles"> <a name="productos">Equipos Disponibles </a> </h1>
+            <div class="col-xs-10 col-sm-6 col-md-4 producto">
+               <div class="card">
+                  <img src="imagenes/Productos/img1.png" alt="">
+                  <h3>Celular1</h3>
+                  <p>Precio</p>
+               </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-md-4 producto">
+               <div class="card">
+                  <img src="imagenes/Productos/img2.png" alt="">
+                  <h3>Celular2</h3>
+                  <p>Precio</p>
+               </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-md-4 producto">
+               <div class="card">
+                  <img src="imagenes/Productos/img3.png" alt="">
+                  <h3>Celular3</h3>
+                  <p>Precio</p>
+               </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-md-4 producto">
+               <div class="card">
+                  <img src="imagenes/Productos/img4.png" alt="">
+                  <h3>Celular4</h3>
+                  <p>Precio</p>
+               </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-md-4 producto">
+               <div class="card">
+                  <img src="imagenes/Productos/img5.png" alt="">
+                  <h3>Celular5</h3>
+                  <p>Precio</p>
+               </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-md-4 producto">
+               <div class="card">
+                  <img src="imagenes/Productos/img6.png" alt="">
+                  <h3>Celular6</h3>
+                  <p>Precio</p>
+               </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-md-4 producto">
+               <div class="card">
+                  <img src="imagenes/Productos/img7.png" alt="">
+                  <h3>Celular7</h3>
+                  <p>Precio</p>
+               </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-md-4 producto">
+               <div class="card">
+                  <img src="imagenes/Productos/img8.png" alt="">
+                  <h3>Celular8</h3>
+                  <p>Precio</p>
+               </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-md-4 producto">
+               <div class="card">
+                  <img src="imagenes/Productos/img9.png" alt="">
+                  <h3>Celular9</h3>
+                  <p>Precio</p>
+               </div>
+            </div>
+         </div>
+         <br><br>
+         <hr class="container">
+      </div>
+      <br><br>
+      <!--Seccion Video-->
+      <div class="contenedor" >
+         <h1> <a name="video"> </a> </h1>
+         <div class="row">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vbNHCn2gHQ4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video" ></iframe>
+         </div>
+      </div>
+      <br>
+      <div class="contenedor">
+         <div class="row">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hqorowAR1jM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video"></iframe>
+         </div>
+      </div>
+      <br>
+      <br>
+      <hr class="container">
+      <!-- Fin Seccion Video-->
+      <!--Seccion mision vision y valores-->
+      <div class="container-fluid">
+         <div class="row formatomvv">
+            <div id="quienes">
+               <h1>
+                  <a name="mision">
+                     MMC es Tecnología en sus manos!
+               </h1>
+               <h3>Creamos una empresa venezolana con espiritu emprendedor, dispuesto a trabajar por nuestro pais y su lanzamiento a la tecnologia digital!</h3>
+            </div>
+            <div class="col-md-4">
+            <img class="img-thumbnail" src="Imagenes/Mision.jpg" width="200px">
+            <br><br>
+            <p>Somos una empresa de comercialización de productos y servicios en el área de telefonía móvil, confiable, eficiente y ética; orientada a satisfacer las necesidades y aspiraciones de nuestros clientes. Somos un aporte positivo para la sociedad, generando empleo directo e indirecto dentro de un buen ambiente de trabajo, pagando impuestos y obteniendo un justo margen de utilidad.</p>
+            </div>
+            <div class="col-md-4">
+            <img class="img-thumbnail" src="Imagenes/vision.jpg" width="200px">
+            <br><br>
+            <p>Ser para el año 2018, líder en la comercialización de productos y servicios en el sector de telefonía movil, satisfaciendo las necesidades de nuestros clientes, accionistas, capital humano y sociedad. </p>
+            </div>
+            <div class="col-md-4">
+            <img class="img-thumbnail" src="Imagenes/valores.jpg" width="200px">
+            <br><br><br>
+            <img class="img-thumbnail" src="Imagenes/mission-vision.es.png" width="280px">
+
+            </div>
+         </div>
+         <br><br>
+         <hr class="container">
+      </div>
+   <br><br>
+
+<!-- Nosotros!! -->
+
+      <div class="container-fluid nosotros">
+         <div class="container">
+               <div class="row">
+                  <br>
+                  <h1>Nuestros Directores</h1>
+                  <br><br>
+               </div>
+             <div class="row">
+               <div class="col-12 nosotros">
+                  <div> <img class="img-circle" src="Imagenes/Mari.jpg" width="140px">
+                     <h4>Ing. Maribel Ferreira</h4>
+                     <h5 align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h5>
+                     <p><i class="glyphicon glyphicon-briefcase">&nbsp;</i><i class="glyphicon glyphicon-link">&nbsp;</i><i class="glyphicon glyphicon-globe"></i></p>
+                  </div>
+
+                  <div> <img class="img-circle" src="Imagenes/yo4.jpg" width="140px" align="right"><br><br><br><br><br><br><br>
+                     <h4 align="right">Ing. Manuel Rodríguez</h4>
+                     <h5 align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h5>
+                     <p><i class="glyphicon glyphicon-briefcase">&nbsp;</i><i class="glyphicon glyphicon-link">&nbsp;</i><i class="glyphicon glyphicon-globe"></i></p>
+                  </div>
+               </div>
+             </div>
+         </div>
+    </div>
+<br>
+      <hr class="container">
+      <!--Fin seccion mision vision y valores-->
+      <!--Forma de registro-->
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <form action="" name="formulario" id="formulario" method="POST" onsubmit="return validacion()">
+                          <img src="imagenes/MMC-LOGO-VECTO.png" width="120" height="50" style="padding-top: 6px"> 
+                          <legend> </legend>
+                          <div class="form-group row">
+                              <label for="InputName" class="col-4 col-form-label">Nombre</label>
+                              <div class="col-8">
+                                  <input type="text" class="form-control" id="InputName" aria-describedby="nombreHelp" placeholder="Ingrese Nombre">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="InputApe" class="col-4 col-form-label">Apellido</label>
+                              <div class="col-8">
+                                  <input type="text" class="form-control" id="InputApe" aria-describedby="apeHelp" placeholder="Ingrese Apellido">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="InputEmail" class="col-4 col-form-label">Email address</label>
+                              <div class="col-8">
+                                  <input type="text" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="InputTel" class="col-4 col-form-label">Teléfono</label>
+                              <div class="col-8">
+                                  <input type="number" class="form-control" id="InputTel" aria-describedby="telHelp" placeholder="Ingrese Telefono 02122061174">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="InputCel" class="col-4 col-form-label">Celular</label>
+                              <div class="col-8">
+                                  <input type="number" class="form-control" id="InputCel" aria-describedby="celHelp" placeholder="Ingrese Celular 04121234567">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="InputDir" class="col-4 col-form-label">Dirección</label>
+                              <div class="col-8">
+                                  <input type="text" class="form-control" id="InputDir" aria-describedby="dirHelp" rows="3" placeholder="Ingrese Direccion">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="InputEdad" class="col-4 col-form-label">Edad</label>
+                              <div class="col-8">
+                                  <input type="number" class="form-control" id="InputEdad" aria-describedby="edadHelp" placeholder="Ingrese Edad">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="InputSex" class="col-4 col-form-label">Sexo</label>
+                              <div class="col-8">
+                                  <input type="radio" name="sexo" value="hombre"> Hombre
+                                  <br>
+                                  <input type="radio" name="sexo" value="mujer"> Mujer 
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="InputHobby" class="col-4 col-form-label">Hobby</label>
+                              <div class="col-8">
+                                  <input type="text" class="form-control" id="InputHobby" aria-describedby="hobbyHelp" placeholder="Ingrese Hobby">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="InputPais">País</label>
+                              <select name="pais">
+                                  <option value = "0" selected="">Seleccione un pais </option>
+                                  <option value = "usa">USA</option>
+                                  <option value = "canada">Canada</option>
+                                  <option value = "vzla">Venezuela</option>
+                                  <option value = "Colombia">Colombia</option>
+                                  <option value = "ecuador">Ecuador</option>
+                                  <option value = "brasil">Brasil</option>
+                                  <option value = "bolivia">Bolivia</option>
+                              </select>
+                          </div>
+                          <!-- Indicates a successful or positive action -->
+                          <button type="submit" class="btn btn-success">Registrarme</button>
+                          <!-- Secondary, outline button -->
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Fin Modal -->
+
+      <!-- Seccion Donde estamos -->
+      
+      <div class="container-fluid">
+          <div class="row" id="ubicacion">
+              <h1> <a name="ubicacion"> Donde estamos ubicados? </a> </h1>
+              <br><br><br>
+              <div class="container-fluid">
+                  <div class="col-md-6">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.049481379574!2d-66.84713288581943!3d10.496765667165024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xad92098ed386c76!2sImpact+Hub!5e0!3m2!1ses-419!2sve!4v1518746306289" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                  <div class="col-md-6 ubica" >
+                      <br><br><br>
+                      <p> Telefono: 555-55557 </p>
+                      <p> Dirección: Av. ppal. de la urbanización, el edificio mas alto, en el ultimo piso. </p>
+                      <!--i class="fa fa-instagram"> @mmconnect </i> 
+                          <i class="fa fa-facebook"> mmconnect </i-->
+                      <br>
+                      <a href="URL-FACEBOOK" target="_blank"><img alt="siguenos en facebook" height="40" src="http://3.bp.blogspot.com/-MQuocq7OzfU/UiXwUY81yQI/AAAAAAAAB0Q/h6-R_R2-buI/s1600/face.png" title="siguenos en facebook" width="40" />  mmconnect </a>
+                      <br>
+                      <a href="URL-Instagram" target="_blank"><img alt="sígueme en Instagram" height="40" src="http://1.bp.blogspot.com/-y2Hmt1c7DO8/UidPHZf07cI/AAAAAAAAB_4/VoI2-auBvNU/s1600/instagram2.png" title="sígueme en Instagram" width="40" /> @mmconnect </a>
+                      <br>
+                      <a href="URL-Twitter" target="_blank"><img alt="siguenos en Twitter" height="40" src="http://2.bp.blogspot.com/-B0wCtNXYV3U/UiX1VnAQSrI/AAAAAAAAB6Q/ILY3m0NJVE8/s1600/Twitter+NEW.png" title="siguenos en Twitter" width="40" /> mmconnect </a>
+                      <br>
+                      <a href="URL-Correo" target="_blank"><img alt="sígueme por Correo" height="40" src="http://1.bp.blogspot.com/-avjkVxyujwU/UiX1TqFg3tI/AAAAAAAAB5E/cYDurtsLznA/s1600/Mail.png" title="sígueme por Correo" width="40" /> mmconnect@gmail.com </a>
+                  </div>
+              </div>
+          </div>
+            <hr class="container">
+      </div>
+      <br>
+      <!-- fin Seccion Donde estamos -->
+      <!-- Seccion preguntas -->
+      <div class="container-fluid">
+         <div class="row preguntas">
+            <h1> <a name="preguntas"> Preguntas Frecuentes </a> </h1>
+            <div class="col-12"  id="preguntas">
+               <br>
+			   <br>
+                    <p class="pregunta"> <i class="fa fa-envelope"> </i> P: Los equipos tienen Garantía?   </p>
+                    <p> <i class="fa fa-envelope-open"></i> R: Todos los equipos son totalmente nuevos y vienen con una garantia de 3 días, transcurrido este tiempo aplica la garantia del fabricante. </p>
+                    <br>
+                    <p class="pregunta"> <i class="fa fa-envelope"></i> P: Los equipos son liberados?  </p>
+                    <p> <i class="fa fa-envelope-open"></i> R: Todos los equipos están liberados, revise las especificaciones de cada equipo para saber con que operadora trabajan. </p>
+                    <br>
+                    <p class="pregunta"> <i class="fa fa-envelope"></i> P: Se puede retirar personalmente? hacen envíos?  </p>
+                    <p> <i class="fa fa-envelope-open"></i> R: Los equipos pueden ser retirados en nuestras oficinas o enviados a cualquier ciudad, en servicio de courier, los equipos van asegurados, costos de seguros y envío no incluidos en el precio. </p>
+                    <br>
+                    <p class="pregunta"> <i class="fa fa-envelope"></i> P: Cuáles son las formas de pago?  </p>
+                    <p> <i class="fa fa-envelope-open"></i> R: Puede pagar a través de transferencia, o con tarjeta de débito o crédito en nuestras oficinas. </p>
+                    <br>
+                    <p class="pregunta"> <i class="fa fa-envelope"></i> P: A quién se le ocurrió hacer esta pagina?  </p>
+                    <p> <i class="fa fa-envelope-open"></i> R: A quien más??, a Manu, el hombre Lobo. Jajaja, (Sólo queria saber si alguien lee estas preguntas) </p>
+                    <br>
+            </div>
+         </div>
+      </div>
+      <!-- Fin Seccion preguntas -->
+      <!--Footer -->
+      <div class="footer">
+         <p> Recomendamos los siguientes navegadores: Internet Explorer 9 o superior, Chrome, Opera, Firefox, Safari. Resolución recomendada 1024x768 o superior. </p>
+         <p> MMC MultimediaConnect - RIF J00099999-0 Copyright 2012. Todos los derechos reservados. </p>
+      </div>
+   </body>
+</html>

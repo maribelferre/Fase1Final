@@ -1,0 +1,357 @@
+body{
+    background: #F4FBFF;
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+header {
+    background: url(../Imagenes/espacio2.jpg) no-repeat center;    
+    background-size: cover;
+    width: 100%;
+    min-height: 650px;
+}
+
+header h1 {
+    font-family: 'Pompiere', cursive;
+    font-size: 3.5em;
+    text-align: center;
+    color: #E1E1E1;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    margin-top: 30%;
+}
+
+
+.navbar-inverse {
+    background-color: rgba(0,0,0,.5);
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav li a{
+    color: white;
+}
+
+.navbar-inverse .navbar-nav li a:hover{
+    color: #609cd3;
+}
+
+/*segmento quienes somos*/
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    color: #215687;
+}
+
+p{
+   
+    line-height: 30px;
+    margin-bottom: 25px;
+    text-align: center; /*esta accion cambia la clase p del formulario*/
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #B5B2B2;
+
+}
+
+.nosotros{
+    background-color: white;
+}
+
+.nosotros h5{
+    color: #103D10;
+
+}
+
+.nosotros h4{
+    color: black;
+    font-weight: 500;
+}
+
+
+.formatomvv p{
+    color: #4896AA;
+    text-align: justify !important;
+    padding: 14px;
+}
+
+.formatomvv img{
+    -webkit-box-shadow: 3px 3px blue, -0.5em 0 0.4em grey;
+}
+
+.col-md-4{
+    text-align: center;
+    font-size: 25px;
+    font-family: arial;
+    margin-top: 80px;
+    }
+
+.modulo1{
+
+    width: 200px;
+    margin: auto;
+    perspective: 900px;
+    position: relative;
+    margin-top: 150px;
+}
+
+
+.banner{
+     background-color: black;
+     margin-bottom: 0;
+}
+
+
+
+#mpromo1, #mpromo2, #mpromo3{
+    background: url(../Imagenes/spaceb.jpg) no-repeat center;
+    align-items: center; 
+    color: black;
+    position:relative; 
+    width:100%; left:0;
+    text-align:center;
+   
+    font-weight: bold;
+  }
+
+
+.content-carrousel{
+
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    animation: rotar 10s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrousel figure{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+    
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+.content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+
+
+.content-carrousel img{
+    width: auto;
+    height: 100%;
+}
+
+.row espacio{
+     background-image: url(../Imagenes/espacio2.jpg);
+}
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+/* Segmento de Equipos disponibles */
+
+#tdisponibles {
+    text-align: center;
+    font-size: 3.5em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #3BADC2;
+    font-size: 4vw;
+}
+
+
+
+h3{
+    text-align: center;
+}
+
+
+.producto h3{
+    color: #1800AB;
+    font-size: 0.8em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.producto p{
+    color: #FE0A0A;
+    font-size: 0.7em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.producto img{
+    margin-top: 30px;
+    width: auto;
+    height: 200px;
+}
+
+.card{
+    text-align: center;
+    width: 60%;
+    margin-left: 25%;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+}
+
+/* zoom */
+
+
+.card:hover img {
+-webkit-transform:scale(1.75);
+-moz-transform:scale(1.75);
+-ms-transform:scale(1.75);
+-o-transform:scale(1.75);
+transform:scale(1.75);
+}
+
+
+/* Fin Segmento de Equipos disponibles */
+
+/* forma de registro*/
+
+#formulario{
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+#formulario input{
+  font-size: 12px;
+}
+.modal-header, .modal-footer, .modal-body{
+    background-color: grey;
+  }
+  
+#myModal{
+    position: fixed; /* Stay in place */
+    padding-top: 10px; /* Location of the box */
+    margin-bottom: 0;
+    left: 40;
+    right: 40;
+    top: 10;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+/* Fin forma de registro*/
+
+/* Seccion de Ubicacion*/
+
+#ubicacion{
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.ubica p{
+    text-align: left;
+    color: #132891;
+    font-size: 30px;
+}
+
+.ubica i{
+    text-align: left;
+    color: red;
+    font-size: 30px;
+}
+
+
+.footer{
+    height: 60px;
+    background-color: black;
+	color: white;
+    font-size: 0.7em;
+    text-align: center;
+	
+}
+
+.footer p{
+    margin: 0 0 0 0; 
+}
+
+/* Fin Seccion de Ubicacion*/
+
+.contenedor {
+   position: relative;
+   height: 0px;
+   width: 90%;   
+   padding-bottom: 56.25%;
+
+}
+ 
+.video {
+   position: absolute;
+   padding-left: 150px;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+}
+
+/*  Seccion de Video*/
+
+#preguntas {
+    font-size: 14px;
+    padding-left:20px;
+    padding-right: 20px; 
+}
+#preguntas p{
+    margin: 0 0 0 0;  
+    text-align: left; 
+}
+
+.preguntas{
+    color: black;
+    background-color: #B8FFFC;
+}
+
+.pregunta{
+    color: red;
+    font-weight: bold;
+}
